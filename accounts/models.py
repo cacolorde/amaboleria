@@ -110,11 +110,11 @@ class Order(models.Model):
   # Número da autorização, identico ao NSU.
   # nsu = models.CharField(max_length=6, blank=True, null=True)
 
-  bairro = models.CharField('Bairro', max_length=50, blank=True)
-  cep = models.CharField('CEP', max_length=8, blank=True)
-  endereco = models.CharField('Endereço', max_length=200, blank=True)
+  bairro = models.CharField('Bairro', max_length=50, blank=True, null=True)
+  cep = models.CharField('CEP', max_length=8, blank=True, null=True)
+  endereco = models.CharField('Endereço', max_length=200, blank=True, null=True)
   numero = models.IntegerField(blank=True, null=True)
-  complemento = models.CharField('Complemento', max_length=50, blank=True)
+  complemento = models.CharField('Complemento', max_length=50, blank=True, null=True)
 
   def __str__(self):
     return ('nº: {} ||\n Status: {} ||\n Data de Entrega: {}').format(self.transaction_id, self.status, self.order_date) 

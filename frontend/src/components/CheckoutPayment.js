@@ -1,7 +1,5 @@
 import React from "react";
-import axios from "axios";
 import "../css/CheckoutPayment.css";
-import URL from "../api/api";
 import amex from "../img/card_flags/amex.png";
 import aura from "../img/card_flags/aura.png";
 import dinners from "../img/card_flags/dinners.png";
@@ -13,7 +11,6 @@ import mastercard from "../img/card_flags/mastercard.png";
 import visa from "../img/card_flags/visa.png";
 import { green } from "@material-ui/core/colors";
 import { makeStyles } from "@material-ui/core/styles";
-import clsx from "clsx";
 import CheckIcon from "@material-ui/icons/Check";
 import { connect } from "react-redux";
 import {
@@ -40,19 +37,6 @@ const useStyles = makeStyles((theme) => ({
   wrapper: {
     margin: theme.spacing(1),
     position: "relative",
-  },
-  buttonSuccess: {
-    backgroundColor: green[500],
-    "&:hover": {
-      backgroundColor: green[700],
-    },
-  },
-  fabProgress: {
-    color: green[500],
-    position: "absolute",
-    top: -6,
-    left: -6,
-    zIndex: 1,
   },
   buttonProgress: {
     color: green[500],
@@ -240,14 +224,25 @@ const CheckoutPayment = (props) => {
               variant="contained"
               color="primary"
               onClick={props.executePayment}
-              className={props.success ? classes.buttonSuccess : ""}
+              style={{
+                backgroundColor: props.success ? "#adff2f" : "#c0c0c0",
+                minWidth: "75px",
+                minHeight: "40px",
+              }}
+              // className={props.success ? classes.buttonSuccess : ""}
               disabled={props.isLoading ? true : props.success ? true : false}
             >
-              {props.success ? <CheckIcon /> : props.isLoading ? "" : "Pagar"}
+              {props.success ? (
+                <CheckIcon />
+              ) : props.isLoading ? (
+                <CircularProgress
+                  size={24}
+                  className={classes.buttonProgress}
+                />
+              ) : (
+                "Pagar"
+              )}
             </Button>
-            {props.isLoading && (
-              <CircularProgress size={24} className={classes.buttonProgress} />
-            )}
           </div>
         </div>
 

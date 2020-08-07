@@ -9,7 +9,6 @@ import AlertBox from "./AlertBox";
 
 //images
 import bolo1 from "../img/galeria/choc_beij_docleit.jpg";
-import bolo3 from "../img/bolo3.jpg";
 import bolo4 from "../img/bolo-pacoca.jpg";
 import bolo5 from "../img/galeria/amant_brig_queijo_goi.jpg";
 import bolo6 from "../img/galeria/mant_moca_choc.jpg";

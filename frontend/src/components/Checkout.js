@@ -75,18 +75,21 @@ const Checkout = (props) => {
       Math.floor(Math.random() * 900000000) + 100000000
     ).toString();
 
-    var Address = useDbAddress
-      ? {
-          endereco: Data.endereco,
-          numero: Data.numero,
-          complemento: Data.complemento,
-          bairro: Data.bairro,
-          cep: Data.cep,
-        }
-      : {
-          ...customAddress,
-        };
-    if (saveDbAddress) {
+    var Address =
+      entrega === "Retirar"
+        ? null
+        : useDbAddress
+        ? {
+            endereco: Data.endereco,
+            numero: Data.numero,
+            complemento: Data.complemento,
+            bairro: Data.bairro,
+            cep: Data.cep,
+          }
+        : {
+            ...customAddress,
+          };
+    if (saveDbAddress && entrega === "Entregar") {
       axios
         .post(
           `${URL}/update-user-data/`,
@@ -180,7 +183,7 @@ const Checkout = (props) => {
           bairro.value = data.bairro;
           setCustomAddress({
             ...customAddress,
-            cep: data.cep,
+            cep: data.cep.replace("-", ""),
             endereco: logradouro.value,
             bairro: bairro.value,
           });

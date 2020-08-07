@@ -295,6 +295,8 @@ class Create_Order_Item(APIView):
       data['errors'] = serializer.errors
       order_save = False
 
+    print(data)
+    print(order_data)
     order = Order.objects.filter(transaction_id=order_data['transaction_id'])[0]
     for item in request.data.get('cartItems'):
       print(item)

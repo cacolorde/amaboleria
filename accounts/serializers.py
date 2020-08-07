@@ -69,6 +69,10 @@ class OrderSerializer(serializers.ModelSerializer):
 
     extra_kwargs = {
       'complemento': {'required': False},
+      'numero': {'required': False},
+      'endereco': {'required': False},
+      'cep': {'required': False},
+      'bairro': {'required': False},
       'order_description': {'required': False},
     }
 

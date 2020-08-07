@@ -45,7 +45,7 @@ export const MinhaConta = (props) => {
       childRef.current.showAlert();
       setUpdateData(false);
     }
-  }, [updateData, props.token, props.isAuthenticated, props.history]);
+  }, [updateData, props, redirected_path]);
 
   return props.isAuthenticated ? (
     <section className="hero is-fullheight bolo-background-4">
