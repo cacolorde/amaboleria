@@ -1,0 +1,15 @@
+.bolo-background-3::after {
+  content: "";
+  background: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url(../img/bolo-pacoca.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}

@@ -1,0 +1,149 @@
+.logo-title-1 {
+  color: #f68d00;
+  font-size: 55px;
+  font-weight: bold;
+  letter-spacing: 20px;
+}
+
+.logo-title-2 {
+  font-weight: bold;
+  color: #f68d00;
+  font-size: 30px;
+}
+
+.monte-seu-bolo {
+  font-weight: bold;
+  margin: 20px;
+  border-radius: 200px;
+  color: black !important;
+  font-size: 30px;
+  background-color: #f68d00;
+  -webkit-animation: out 0.3s forwards;
+}
+.monte-seu-bolo:hover {
+  background-color: #f68d00 !important;
+  border: solid #f68d00 !important;
+  animation: in 0.3s forwards;
+}
+
+.tabs.is-boxed li.is-active a,
+span.navbar-item:hover,
+.tabs.is-boxed a:hover,
+a.navbar-item:hover,
+a.navbar-item.is-active {
+  color: #f68d00;
+  background-color: transparent;
+  border: none !important;
+  transition: ease 0.4s;
+}
+
+span.navbar-item,
+a.navbar-item {
+  color: black;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-whatsapp:hover {
+  transform: scale(1.4);
+  transition: ease-in-out 0.6s;
+}
+
+.fa-shopping-cart {
+  color: black;
+}
+.fa-shopping-cart:hover {
+  color: #f68d00;
+  transition: ease-in-out 0.6s;
+}
+
+.fa-instagram {
+  color: transparent;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.fa-whatsapp {
+  color: #0dbb48;
+  /* background-color: white; */
+  border: none;
+}
+
+@keyframes in {
+  from {
+    -webkit-transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.15);
+  }
+}
+
+@keyframes out {
+  from {
+    -webkit-transform: scale(1.15);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+.sm-flex-container-nav {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-title {
+    display: none;
+  }
+
+  .sm-flex-container-nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 3.2rem;
+  }
+
+  .sm-item-nav {
+    padding: 0.5rem 1rem;
+  }
+}
+
+div.navbar-end span {
+  color: black;
+  cursor: pointer;
+}
+
+.cart-items-counter {
+  position: relative;
+  padding: 0.25rem 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  top: -15px;
+  right: 5px;
+  z-index: 10;
+  background-color: #f68d00;
+  border-radius: 25px;
+}
+
+.scale-cart:hover {
+  transform: scale(1.5);
+}

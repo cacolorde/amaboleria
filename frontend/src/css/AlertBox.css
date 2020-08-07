@@ -1,0 +1,128 @@
+.alert {
+  padding: 1.2rem 2.5rem;
+  min-width: 345px;
+  position: fixed;
+  right: 0;
+  top: 0.6rem;
+  border-radius: 4px;
+  /* border-left: 8px solid rgb(0, 190, 0); */
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999999;
+}
+
+.alert.check {
+  background-color: chartreuse;
+}
+
+.alert.wrong {
+  background-color: rgb(255, 131, 131);
+}
+
+.alert.showAlert {
+  opacity: 1;
+  pointer-events: auto;
+}
+.alert.show {
+  animation: show_slide 1s ease forwards;
+}
+
+.alert.hide {
+  /* display: none; */
+  animation: hide_slide 1s ease forwards;
+}
+
+.alert.fa-check-circle {
+  position: absolute;
+  left: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: green;
+  font-size: 1.8rem;
+}
+
+.alert.fa-times-circle {
+  position: absolute;
+  left: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: red;
+  font-size: 1.8rem;
+}
+
+.alert .msg {
+  padding: 0 1.2rem;
+  font-size: 1.15rem;
+}
+
+.alert .msg.check {
+  color: darkgreen;
+}
+.alert .msg.wrong {
+  color: darkred;
+}
+
+.alert .close-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  padding: 1.2rem 1.15rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.alert .close-btn.check {
+  background-color: green;
+}
+.alert .close-btn.wrong {
+  background-color: red;
+}
+
+.close-btn .fa-times {
+  font-size: 1.4rem;
+  line-height: 40px;
+}
+
+.close-btn .fa-times.check {
+  color: darkgreen;
+}
+.close-btn .fa-times.wrong {
+  color: darkred;
+}
+
+.close-btn.check:hover {
+  background-color: rgb(0, 66, 0);
+}
+.close-btn.wrong:hover {
+  background-color: rgb(75, 0, 0);
+}
+
+@keyframes hide_slide {
+  0% {
+    transform: translateX(-10px);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+  80% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes show_slide {
+  0% {
+    transform: translateX(100%);
+  }
+  40% {
+    transform: translateX(-10%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.daf99e41.chunk.css",
+    "main.js": "/static/js/main.b3f798e7.chunk.js",
+    "main.js.map": "/static/js/main.b3f798e7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c8a21426.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c8a21426.js.map",
+    "static/js/2.4153eba5.chunk.js": "/static/js/2.4153eba5.chunk.js",
+    "static/js/2.4153eba5.chunk.js.map": "/static/js/2.4153eba5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.7435c05ea98bdb588e9cbaec49a53dd0.js": "/precache-manifest.7435c05ea98bdb588e9cbaec49a53dd0.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.daf99e41.chunk.css.map": "/static/css/main.daf99e41.chunk.css.map",
+    "static/js/2.4153eba5.chunk.js.LICENSE.txt": "/static/js/2.4153eba5.chunk.js.LICENSE.txt",
+    "static/media/amant_brig_queijo_goi.jpg": "/static/media/amant_brig_queijo_goi.f360a381.jpg",
+    "static/media/CarrinhoDeCompras.css": "/static/media/amant_moca_choc.dd10ec7f.jpg",
+    "static/media/amanteigada.jpg": "/static/media/amanteigada.b370c47d.jpg",
+    "static/media/amendoim.jpg": "/static/media/amendoim.6dec4ea3.jpg",
+    "static/media/QuemSomosNos.css": "/static/media/bolo-pacoca.6523e141.jpg",
+    "static/media/HomePage.css": "/static/media/bolo3.b2b82d0d.jpg",
+    "static/media/caseiros.jpg": "/static/media/caseiros.cee63683.jpg",
+    "static/media/cen_bigp_bignut.jpg": "/static/media/cen_bigp_bignut.649f5f34.jpg",
+    "static/media/cen_bigp_bignut2.jpg": "/static/media/cen_bigp_bignut2.e58996ae.jpg",
+    "static/media/cen_formig.jpg": "/static/media/cen_formig.ef818de2.jpg",
+    "static/media/MinhaConta.css": "/static/media/choc_beij_docleit.6fd0c763.jpg",
+    "static/media/chocolate.jpg": "/static/media/chocolate.cc08d932.jpg",
+    "static/media/index.css": "/static/media/dk-lemon-yellow-sun.457801b9.otf",
+    "static/media/fuba_erva.png": "/static/media/fuba_erva.4e2a1b6f.png",
+    "static/media/laranja.jpg": "/static/media/laranja.ed175999.jpg",
+    "static/media/mant_lemoncurd.jpg": "/static/media/mant_lemoncurd.a174efef.jpg",
+    "static/media/mant_moca_choc.jpg": "/static/media/mant_moca_choc.2b37fb44.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c8a21426.js",
+    "static/js/2.4153eba5.chunk.js",
+    "static/css/main.daf99e41.chunk.css",
+    "static/js/main.b3f798e7.chunk.js"
+  ]
+}

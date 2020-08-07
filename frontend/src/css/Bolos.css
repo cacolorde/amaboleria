@@ -1,0 +1,130 @@
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.bolo-body {
+  background-color: #eccb93;
+  height: 100%;
+  padding: 10px;
+}
+
+.main-p {
+  border-left: #f68d00 solid 2px;
+  width: fit-content;
+}
+
+.custom-container {
+  margin: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 1rem;
+  grid-auto-rows: 300px;
+  grid-auto-flow: dense;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.gallery li {
+  /* overflow: hidden; */
+  max-width: 90%;
+}
+
+.gallery li figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.gallery.caption-2 img {
+  filter: none;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery.caption-2 figure {
+  overflow: hidden;
+  border: black 3px solid;
+  border-radius: 5px;
+}
+
+.gallery.caption-2 figure figcaption.main-caption {
+  position: absolute;
+  background-color: #eccb93;
+  text-align: left;
+  bottom: 1px;
+  left: 0px;
+  border: 2px solid #645137;
+  /* width: 100%; */
+  /* height: 100%; */
+  display: grid;
+  align-content: start;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding-right: 1rem;
+  padding-left: 1rem;
+  transform: translate3d(0, 1rem, 0);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  pointer-event: none;
+}
+.gallery.caption-2 figure figcaption.addToCartCaption {
+  position: absolute;
+  background-color: #eccb93;
+  text-align: right;
+  top: 2px;
+  /* left: none; */
+  right: 4px;
+  border: 2px solid #645137;
+  /* width: 100%; */
+  /* height: 100%; */
+  display: grid;
+  align-content: start;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 0.25rem;
+  transform: translate3d(0, 1rem, 0);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  pointer-event: none;
+}
+
+.gallery.caption-2 figure h1 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.gallery.caption-2 figure p {
+  font-size: 18px;
+  /* margin-bottom: 2rem; */
+}
+
+.gallery.caption-2 figure:hover img {
+  filter: invert(25%);
+  transform: scale(1);
+}
+
+.gallery.caption-2 figure:hover figcaption {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}

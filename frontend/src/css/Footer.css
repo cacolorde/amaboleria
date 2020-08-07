@@ -1,0 +1,44 @@
+.footer-bg {
+  padding: 1rem 0rem;
+  background-color: #333;
+  display: grid;
+  place-items: center;
+}
+
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  /* padding: 0 6rem; */
+}
+
+.coluna {
+  display: flex;
+  margin: 1rem 4rem;
+  color: #777777;
+  flex-direction: column;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.coluna h3 {
+  font-family: Helvetica;
+  color: #777777;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.coluna div a,
+.coluna div p {
+  color: #555555;
+  font-family: Helvetica;
+  font-size: 13px;
+  font-weight: 100;
+}
+.coluna a:hover {
+  text-decoration: underline;
+  font-family: Helvetica;
+  font-size: 13px;
+}
