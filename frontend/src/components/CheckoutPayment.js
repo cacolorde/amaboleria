@@ -243,7 +243,7 @@ const CheckoutPayment = (props) => {
               className={props.success ? classes.buttonSuccess : ""}
               disabled={props.isLoading ? true : props.success ? true : false}
             >
-              {props.success ? <CheckIcon /> : "Pagar"}
+              {props.success ? <CheckIcon /> : props.isLoading ? "" : "Pagar"}
             </Button>
             {props.isLoading && (
               <CircularProgress size={24} className={classes.buttonProgress} />

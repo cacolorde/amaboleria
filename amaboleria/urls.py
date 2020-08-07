@@ -8,6 +8,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('accounts.urls')),
     path('', TemplateView.as_view(template_name="index.html")),
+    path('checkout/', TemplateView.as_view(template_name="index.html")),
     path('carrinho-de-compras/', TemplateView.as_view(template_name="index.html")),
     path('minha-conta/', TemplateView.as_view(template_name="index.html")),
     path('login/', TemplateView.as_view(template_name="index.html")),
@@ -15,5 +16,5 @@ urlpatterns = [
     path('bolos/', TemplateView.as_view(template_name="index.html")),
     path('linhas/', TemplateView.as_view(template_name="index.html")),
     path('montagem/', TemplateView.as_view(template_name="index.html")),
-    path('quem-somos-nos', TemplateView.as_view(template_name="index.html")),
+    path('quem-somos-nos/', TemplateView.as_view(template_name="index.html")),
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

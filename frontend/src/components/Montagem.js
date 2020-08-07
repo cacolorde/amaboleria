@@ -60,9 +60,15 @@ class Montagem extends React.Component {
     });
     // this.props.history.push("/minha-conta");
     this.child1.current.showAlert();
-    setTimeout(() => {
-      window.location.href = "/minha-conta";
-    }, 2000);
+    if (this.props.isAuthenticated) {
+      setTimeout(() => {
+        window.location.href = "/minha-conta";
+      }, 2000);
+    } else {
+      setTimeout(() => {
+        window.location.reload();
+      }, 2000);
+    }
   };
 
   openModal = () => {

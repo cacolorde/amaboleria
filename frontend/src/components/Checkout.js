@@ -54,7 +54,7 @@ const Checkout = (props) => {
   const [hasAddress, sethasAddress] = React.useState(false);
   const [entrega, setentrega] = React.useState("");
   const [useDbAddress, setuseDbAddress] = React.useState(true);
-  const [saveDbAddress, setsaveDbAddress] = React.useState(true);
+  const [saveDbAddress, setsaveDbAddress] = React.useState(false);
   const [OrderDescription, setOrderDescription] = React.useState("");
   const [DateError, setDateError] = React.useState("");
   const [selectedDate, setselectedDate] = React.useState(
