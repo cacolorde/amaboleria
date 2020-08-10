@@ -147,3 +147,7 @@ div.navbar-end span {
 .scale-cart:hover {
   transform: scale(1.5);
 }
+
+.navbar-burger span {
+  height: 2.4px;
+}

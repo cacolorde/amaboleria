@@ -175,7 +175,7 @@ export const addToCart = (categoria, massa, recheio, cobertura) => {
     const expirationCartDate = new Date(new Date().getTime() + 3600 * 3000);
     let cartItems = localStorage.getItem("cartItems");
     if (cartItems === undefined || cartItems === null) {
-      dispatch(initializedCart(cartItems));
+      dispatch(initializedCart([newCartItem]));
       cartItems = JSON.stringify([newCartItem]);
     } else {
       cartItems = JSON.parse(cartItems);
@@ -185,6 +185,7 @@ export const addToCart = (categoria, massa, recheio, cobertura) => {
     }
     localStorage.setItem("cartItems", cartItems);
     localStorage.setItem("expirationCartDate", expirationCartDate);
+    dispatch(countCartItems(JSON.parse(localStorage.getItem("cartItems"))));
   };
 };
 

@@ -1,0 +1,17 @@
+Erros conhecidos:
+
+
+
+
+Erros corrigidos:
+
+1 - Corrigir nomeclatura de Entrega e custo de entrega / retirada
+2 - Corrigir questão do número de caracteres da senha
+3 - Corrigida a falta de atualização no estado do carrinho ao 
+    adicionar apenas 1 item (o carrinho permanecia vazio)
+4 - Corrigir espaço em branco na Homepage quando aberta de um celular móvel
+
+Edições feitas:
+
+1 - Alteração do tamanho das fotos na página 'Monte Seu Bolo' tanto para a versão Desktop quanto para Mobile.
+2 - Alteração da distribuição de recheios/cobertura na página 'Monte Seu Bolo' tanto para a versão Desktop quanto para Mobile.

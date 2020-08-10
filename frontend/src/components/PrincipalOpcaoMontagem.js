@@ -22,16 +22,16 @@ const PrincipalOpcaoMontagem = (props) => {
                 <figcaption className="main-caption">
                   {option.caption}
                 </figcaption>
-                <figcaption className="price-caption">
-                  {option.price}
-                </figcaption>
+                {option.price ? (
+                  <figcaption className="price-caption">
+                    {option.price}
+                  </figcaption>
+                ) : null}
                 {option.caption2 ? (
                   <figcaption className="descr-caption">
                     {option.caption2}
                   </figcaption>
-                ) : (
-                  <></>
-                )}
+                ) : null}
               </figure>
             </li>
           );

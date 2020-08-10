@@ -6,6 +6,8 @@ import * as actions from "../store/actions/auth";
 import "../css/Carrinho.css";
 
 const Carrinho = (props) => {
+  // const [cartItems, setcartItems] = React.useState(0);
+
   const onDeleteCartItem = (e) => {
     let index = e.target.getAttribute("index");
     props.deleteFromCart(index);
@@ -24,7 +26,8 @@ const Carrinho = (props) => {
     if (props.liftPrice) {
       props.handlePrice(subtotal);
     }
-  }, [props, subtotal]);
+    // setcartItems(props.cartItems);
+  }, [props.handlePrice, subtotal, props.cartItems]);
 
   return props.cartItems === null || props.cartItems === undefined ? (
     <div className={props.fullHeight ? "flex-container-column-between" : ""}>

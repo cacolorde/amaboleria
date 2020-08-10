@@ -45,6 +45,7 @@ const Bolos = (props) => {
     console.log(categoria);
     props.addToCart(categoria, massa, recheio, [cobertura]);
     childRef.current.showAlert();
+    // setTimeout();
   };
 
   //image data

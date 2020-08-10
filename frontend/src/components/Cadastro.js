@@ -3,6 +3,7 @@ import "../css/Cadastro.css";
 import TopBar from "./TopBar";
 import * as actions from "../store/actions/auth";
 import { connect } from "react-redux";
+import { FormHelperText } from "@material-ui/core";
 
 function Cadastro(props) {
   const [Nome, setNome] = React.useState("");
@@ -58,7 +59,7 @@ function Cadastro(props) {
       }
     } else {
       setpasswordEqualError(false);
-      if (Senha1.length < 9) {
+      if (Senha1.length < 8) {
         setpasswordNumError(true);
         if (!e.target.parentElement.classList.contains("invalid")) {
           e.target.parentElement.classList.add("invalid");
@@ -199,6 +200,9 @@ function Cadastro(props) {
                   type="password"
                   name="senha1"
                 ></input>
+                <FormHelperText>
+                  Sua senha deve ter no mínimo 8 caracteres
+                </FormHelperText>
               </label>
               <label className="password">
                 <span style={{ fontSize: "18px" }} className="label-text">
@@ -227,12 +231,16 @@ function Cadastro(props) {
                 </div>
               )}
               {passwordEqualError ? (
-                <span className="error">As senhas devem coincidir</span>
+                <div>
+                  <span className="error">As senhas devem coincidir</span>
+                </div>
               ) : null}
               {passwordNumError ? (
-                <span className="error">
-                  As senhas devem ter pelo menos 8 caracteres
-                </span>
+                <div>
+                  <span className="error">
+                    As senhas devem ter pelo menos 8 caracteres
+                  </span>
+                </div>
               ) : null}
 
               <div className="text-center mt-5">

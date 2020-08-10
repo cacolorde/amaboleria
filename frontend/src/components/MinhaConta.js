@@ -11,8 +11,18 @@ import PersonalRow from "./PersonalRow";
 import { Redirect } from "react-router-dom";
 import { Grid, Container, Card, CardContent } from "@material-ui/core";
 import AlertBox from "./AlertBox";
+import { makeStyles } from '@material-ui/core/styles';
+
+
+const useStyles = makeStyles({
+  root: {
+    overflow: 'scroll'
+  },
+})
+
 
 export const MinhaConta = (props) => {
+  const classes = useStyles();
   const [Data, setData] = React.useState({});
   const [updateData, setUpdateData] = React.useState(false);
   const queryString = window.location.search;
@@ -94,7 +104,7 @@ export const MinhaConta = (props) => {
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <Card style={cardStyle}>
-                    <CardContent>
+                    <CardContent classes={classes.root}>  
                       <h6 className="personal-data-title">
                         Endereço Cadastrado
                       </h6>

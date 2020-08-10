@@ -112,7 +112,7 @@ export const CheckoutEntrega = (props) => {
     <React.Fragment>
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-helper-label">
-          Retirar ou Entregar (R$ 15,00)?
+          Retirar ou Entregar?
         </InputLabel>
         <Select
           labelId="demo-simple-select-helper-label"
@@ -120,7 +120,7 @@ export const CheckoutEntrega = (props) => {
           value={props.entrega}
           onChange={props.handleEntrega}
         >
-          <MenuItem value="Entregar">Entregar</MenuItem>
+          <MenuItem value="Entregar">Entregar (+R$ 15,00)</MenuItem>
           <MenuItem value="Retirar">Retirar</MenuItem>
         </Select>
         <FormHelperText>Selecione a forma de entrega</FormHelperText>
