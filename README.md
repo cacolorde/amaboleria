@@ -10,23 +10,24 @@ You can visit the production website and try for yourself on [this link](https:/
 <div style="padding: 0.5rem">
     <img align="center" alt="Rafa-Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
     React
-</div>
+</div><br />
+
 <div style="padding: 0.5rem">
   <img align="center" alt="Rafa-Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
   JavaScript
-</div>
+</div><br />
 <div style="padding: 0.5rem">
   <img align="center" alt="Rafa-Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg">
   Redux
 </div>
+<br />
 
 
-**Frontend:**
-
+**Backend:**
 <div style="padding: 0.5rem">
     <img align="center" alt="Rafa-Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
     Python
-</div>
+</div><br />
 <div style="padding: 0.5rem">
   <img align="center" alt="Rafa-Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg">
   Django and Django Rest Framework
