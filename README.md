@@ -29,6 +29,6 @@ You can visit the production website and try for yourself on [this link](https:/
     Python
 </div><br />
 <div style="padding: 0.5rem">
-  <img align="center" alt="Rafa-Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg">
+  <img align="center" alt="Rafa-Ts" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg">
   Django and Django Rest Framework
 </div>
