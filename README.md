@@ -1,7 +1,7 @@
 # Fullstack e-commerce project for my sister's cooking company
 
 Frontend developed in React using Redux for integration with Python's Backend Django Rest Framework.
-You can visit the production website and try for yourself on [this link](https://challenges-react-ballerini-devs.vercel.app/) (Despite not being able to actually buy anything...)
+You can visit the production website and try for yourself on [this link](https://amaboleria.pythonanywhere.com/) (Despite not being able to actually buy anything...)
 
 ## Stacks
 
